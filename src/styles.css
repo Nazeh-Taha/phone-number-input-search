@@ -1,0 +1,117 @@
+.countryPhoneContainer{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.countryPhoneLabel {
+    color: #e3e3e3;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.countryInputContainer {
+    position: relative;
+
+}
+
+.countryResultContainer {
+    position: absolute;
+    top: 95px;
+    background-color: #fff;
+    width: 290px;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.11);
+    left: 0;
+    min-width: 40px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 10000000;
+}
+.countryResultContainer input {
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    box-sizing: border-box;
+    min-width: 40px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.countryInputContainer input{
+    min-width: 350px;
+    height: 40px;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #e3e3e3;
+    outline: none;
+    font-family: unset;
+}
+
+.countryInputCountryCode {
+    position: absolute;
+    height: 40px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+    font-family: unset;
+}
+
+
+.countryResultDefault {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.countryResultDefault img {
+    margin: 0 20px;
+    height: 35px;
+    width: 65px;
+}
+
+.countryResultDefault p{
+    margin: 0;
+}
+
+.countryResultNoResult {
+    min-height: 40px;
+    color: #e3e3e3;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.countryResultSearchCountry {
+    max-height: 175px;
+    overflow-y: auto;
+    padding: 20px 20px;  
+    }
+
+   
+.countryResultResult {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.countryResultResult img {
+    margin-right: 20px;
+    height: 35px;
+    width: 65px;
+}
+.countryResultResult p {
+    margin: 0;
+}
