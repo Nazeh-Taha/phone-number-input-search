@@ -1,7 +1,7 @@
 {
   "name": "phone-number-input-search",
   "description": "React Input Phone Number component",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "homepage": "http://github.com/Nazeh-Taha/phone-number-input-search",
   "repository": {
     "type": "git",

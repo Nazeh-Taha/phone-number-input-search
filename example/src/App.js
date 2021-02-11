@@ -3,10 +3,9 @@ import { ReactPhoneInput } from "phone-number-input-search";
 
 const App = () => {
 
-
   return (
     <div >
-      <ReactPhoneInput />
+      <ReactPhoneInput getPhoneNumber={()=>{}}/>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import styles from "./styles.css";
 import { CountriesReducer } from './state/reducer';
 
 
-export const ReactPhoneInput = () =>{
+export const ReactPhoneInput = ({getPhoneNumber = () => {}}) =>{
   const [state, dispatch] = CountriesReducer();
   const node = useRef();
   const handleClickOutside = (e) => {
@@ -35,7 +35,8 @@ export const ReactPhoneInput = () =>{
         {/* Input container */}
         <div className={styles.countryInputContainer}>
           <input type='text' value={state.phoneNumber}
-            onChange={(e) => dispatch({ type: 'handleChangePhoneNumber', value: e.target.value })}
+            onChange={(e) => {dispatch({ type: 'handleChangePhoneNumber', value: e.target.value });
+            getPhoneNumber(state.countryPhone.code + e.target.value)}}
             onFocus={() => dispatch({ type: 'showCountryDropdown' })} />
           <div className={styles.countryInputCountryCode}>{state.countryPhone.code}</div>
         </div>
